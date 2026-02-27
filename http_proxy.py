@@ -108,7 +108,7 @@ def relay(sock1, sock2):
     t2.join()
 
 
-def start_proxy(host="0.0.0.0", port=8080):
+def start_proxy(host="0.0.0.0", port=9999):
     print(f"[INFO] Starting HTTP Proxy on {host}:{port} ...")
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))

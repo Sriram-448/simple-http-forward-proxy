@@ -100,6 +100,14 @@ For HTTPS websites, the browser automatically sends a `CONNECT` request and the 
 Client → Proxy → Server
        ←       ←
 ```
+High-Level Flow
+Client (Browser)
+        ↓
+   Local Proxy (Python)
+        ↓
+ Destination Server
+        ↓
+   Response returned via Proxy
 
 ### HTTPS Flow
 

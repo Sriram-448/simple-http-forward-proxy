@@ -13,7 +13,7 @@ The implementation is intentionally simple and focused on learning networking fu
 
 ---
 
-## 📌 Purpose
+##  Purpose
 
 I built this project to learn:
 
@@ -23,22 +23,22 @@ I built this project to learn:
 * Difference between HTTP forwarding and HTTPS tunneling
 * Handling multiple connections using threads
 
-The goal is to understand the **flow of data between client → proxy → server**.
+The goal is to understand the **flow of data between client -> proxy -> server**.
 
 ---
 
-## 🧱 Project Structure
-
+##  Project Structure
+                                                       
 ```
 simple-http-forward-proxy/
 │
-├── http_proxy.py   # Main proxy server
-└── README.md        # Documentation
+├--- http_proxy.py   # Main proxy server
+└--- README.md        # Documentation
 ```
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 You only need:
 
@@ -54,7 +54,7 @@ python --version
 
 ---
 
-## ▶️ Running the Proxy
+##  Running the Proxy
 
 Open the project folder in **VS Code** or terminal and run:
 
@@ -72,7 +72,7 @@ This means the proxy server is running.
 
 ---
 
-## 🌐 Configure Browser / Client Proxy
+##  Configure Browser / Client Proxy
 
 Set manual proxy configuration:
 
@@ -102,11 +102,11 @@ Client → Proxy → Server
 ```
 High-Level Flow
 Client (Browser)
-        ↓
+        |
    Local Proxy (Python)
-        ↓
+        |
  Destination Server
-        ↓
+        |
    Response returned via Proxy
 
 ### HTTPS Flow
@@ -119,7 +119,7 @@ No TLS interception or inspection is performed.
 
 ---
 
-## ✨ Features
+##  Features
 
 * HTTP GET / POST forwarding
 * HTTPS CONNECT tunneling
@@ -129,7 +129,7 @@ No TLS interception or inspection is performed.
 
 ---
 
-## 🚫 Limitations (Intentional)
+##  Limitations (Intentional)
 
 * No caching
 * No authentication
@@ -142,7 +142,7 @@ This keeps the project simple and focused on learning.
 
 ---
 
-## 🧠 Implementation Notes
+##  Implementation Notes
 
 * Built using Python `socket` module
 * Each client connection runs in its own thread
@@ -152,7 +152,7 @@ This keeps the project simple and focused on learning.
 
 ---
 
-## 🧪 Testing Example
+##  Testing Example
 
 Using curl:
 
@@ -164,7 +164,7 @@ If the page loads, the proxy is working.
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Async version using asyncio
 * Request logging dashboard
